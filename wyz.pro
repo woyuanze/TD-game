@@ -32,7 +32,11 @@ SOURCES += \
     health.cpp \
     firsttowericon.cpp \
     firsttower.cpp \
-    bullet.cpp
+    bullet.cpp \
+    secondtower.cpp \
+    thirdtower.cpp \
+    secondtowericon.cpp \
+    thirdtowericon.cpp
 
 HEADERS += \
     enemy.h \
@@ -41,7 +45,11 @@ HEADERS += \
     health.h \
     firsttowericon.h \
     firsttower.h \
-    bullet.h
+    bullet.h \
+    secondtower.h \
+    thirdtower.h \
+    secondtowericon.h \
+    thirdtowericon.h
 
 FORMS += \
         mainwindow.ui

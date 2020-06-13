@@ -3,8 +3,10 @@
 #include "tower.h"
 #include "bullet.h"
 #include "enemy.h"
-#include "firsttowericon.h"
-#include "firsttower.h"
+#include "Firsttowericon.h"
+#include "Firsttower.h"
+#include "secondtowericon.h"
+#include "thirdtowericon.h"
 #include "QGraphicsLineItem"
 #include "qdebug.h"
 #include <QBrush>
@@ -46,11 +48,18 @@ Game::Game():QGraphicsView()
 
     //test code
     ft = new BuildFirstTowerIcon();
+    st = new BuildSecondTowerIcon();
+    tt = new BuildThirdTowerIcon();
+    st->setPos(x(),y()+100);
+    tt->setPos(x(),y()+200);
 
     scene->addItem(ft);
+    scene->addItem(st);
+    scene->addItem(tt);
 
 
-    //score and health
+
+    // health
     health = new Health();
     health->setPos(x()+100,y()+40);
     scene->addItem(health);
@@ -87,7 +96,14 @@ void Game::mousePressEvent(QMouseEvent *event)
         {
             scene->removeItem(ft);
         }
-
+        if(st->count == 1)
+        {
+            scene->removeItem(st);
+        }
+        if(tt->count==1)
+        {
+            scene->removeItem(tt);
+        }
     }
     else{
         QGraphicsView::mousePressEvent(event);

@@ -6,7 +6,9 @@
 #include "tower.h"
 #include "health.h"
 #include <QTimer>
-#include <firsttowericon.h>
+#include <Firsttowericon.h>
+#include <Secondtowericon.h>
+#include <thirdtowericon.h>
 
 class Game: public QGraphicsView{
     Q_OBJECT
@@ -27,6 +29,8 @@ public:
     QTimer* spawnTimer;
     Health *health;
     BuildFirstTowerIcon *ft;
+    BuildSecondTowerIcon *st;
+    BuildThirdTowerIcon *tt;
     int enemySpawned;
     int maxNumberOfEnemies;
     QList<QPointF> pointsToFollow;
@@ -36,3 +40,4 @@ public slots:
 };
 
 #endif // GAME_H
+

@@ -4,5 +4,9 @@
         <file>pic/arrow.png</file>
         <file>pic/background.jpg</file>
         <file>pic/enemy.png</file>
+        <file>pic/secondtower.png</file>
+        <file>pic/thirdtower.png</file>
+        <file>pic/thirdtowerbullet.png</file>
+        <file>pic/secondtowerbullet.png</file>
     </qresource>
 </RCC>
