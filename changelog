@@ -1,0 +1,2 @@
+第二版加入了“secondtower.h  secondtower.cpp  secondtowericon.h  secondtowericon.cpp  thirdtower.h  thirdtower.cpp  
+thirdtowericon.h  thirdtowericon.cpp"即加入了两种新的塔，同时对game.cpp做出了相应的修改
