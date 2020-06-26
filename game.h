@@ -4,10 +4,11 @@
 #include <QGraphicsView>
 #include <QMouseEvent>
 #include "tower.h"
+#include "score.h"
 #include "health.h"
 #include <QTimer>
-#include <Firsttowericon.h>
-#include <Secondtowericon.h>
+#include <firsttowericon.h>
+#include <secondtowericon.h>
 #include <thirdtowericon.h>
 
 class Game: public QGraphicsView{
@@ -28,6 +29,7 @@ public:
     Tower* build;
     QTimer* spawnTimer;
     Health *health;
+    Score *score;
     BuildFirstTowerIcon *ft;
     BuildSecondTowerIcon *st;
     BuildThirdTowerIcon *tt;

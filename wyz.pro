@@ -36,7 +36,8 @@ SOURCES += \
     secondtower.cpp \
     thirdtower.cpp \
     secondtowericon.cpp \
-    thirdtowericon.cpp
+    thirdtowericon.cpp \
+    score.cpp
 
 HEADERS += \
     enemy.h \
@@ -49,7 +50,8 @@ HEADERS += \
     secondtower.h \
     thirdtower.h \
     secondtowericon.h \
-    thirdtowericon.h
+    thirdtowericon.h \
+    score.h
 
 FORMS += \
         mainwindow.ui

@@ -3,11 +3,12 @@
 #include "tower.h"
 #include "bullet.h"
 #include "enemy.h"
-#include "Firsttowericon.h"
-#include "Firsttower.h"
+#include "firsttowericon.h"
+#include "firsttower.h"
 #include "secondtowericon.h"
 #include "thirdtowericon.h"
 #include "QGraphicsLineItem"
+#include "score.h"
 #include "qdebug.h"
 #include <QBrush>
 #include <QImage>
@@ -59,7 +60,10 @@ Game::Game():QGraphicsView()
 
 
 
-    // health
+    //score and health
+    score = new Score();
+    score->setPos(x()+100,y()+15);
+    scene->addItem(score);
     health = new Health();
     health->setPos(x()+100,y()+40);
     scene->addItem(health);
